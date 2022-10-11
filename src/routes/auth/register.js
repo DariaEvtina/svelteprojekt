@@ -4,8 +4,8 @@ export function post(req, res) {
     const user = req.body;
 
     api.post('users', user ).then(response => {
-        if (response.user) {
-            req.session.user = response.user;
+        if (response.token) {
+            req.session.token = response.token;
         }
 
         res.setHeader('Content-Type', 'application/json');

@@ -56,7 +56,7 @@
 		display: block;
 	}
 </style>
-<!--{JSON.stringify($session)}-->
+{JSON.stringify($session)}
 <nav>
 	<ul>
 		{#if $session.token}
